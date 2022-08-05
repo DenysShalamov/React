@@ -3,7 +3,7 @@ import './userInfo.scss';
 import Avatar from './Avatar';
 
 const UserInfo = (props) => {
-  console.log(props.user);
+  // console.log(props.user);
   return (
     <div className="user-info">
       <Avatar avatarUrl= {props.user.avatarUrl}/>
