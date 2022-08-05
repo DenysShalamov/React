@@ -7,7 +7,7 @@ function Profile(userData) {
   return (
     <div className="profile">
       <h2 className="profile__name">
-        {userData.user.firstName} {userData.userData.lastName}
+        {userData.userData.firstName} {userData.userData.lastName}
       </h2>
       <div className="profile__birth">
         Was born {dateBirth} in {userData.userData.birthPlace}
