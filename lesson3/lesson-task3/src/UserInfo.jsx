@@ -6,7 +6,7 @@ const UserInfo = (props) => {
   console.log(props.user);
   return (
     <div className="user-info">
-      <Avatar user= {props.user}/>
+      <Avatar avatarUrl= {props.user.avatarUrl}/>
       <div className="user-info__name">{props.user.name}</div>
     </div>
   );
