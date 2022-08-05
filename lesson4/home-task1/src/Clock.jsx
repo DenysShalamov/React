@@ -12,15 +12,15 @@ const getTimeWithOffset = offset => {
 
 class Clock extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       location: props.location,
-      time: moment(getTimeWithOffset(props.offset)).format('LTS'), 
-    }
+      time: moment(getTimeWithOffset(props.offset)).format('LTS'),
+    };
 
     setInterval(() => {
       this.setState({
-        time: moment(getTimeWithOffset(props.offset)).format('LTS'), 
+        time: moment(getTimeWithOffset(props.offset)).format('LTS'),
       });
     }, 1000);
   }
