@@ -12,4 +12,4 @@ const userData = {
   birthPlace: 'London',
 };
 
-ReactDOM.render(<Profile user={userData}/>, rootElem);
+ReactDOM.render(<Profile user={userData} />, rootElem);
