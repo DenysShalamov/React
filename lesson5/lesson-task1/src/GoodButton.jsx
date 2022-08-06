@@ -3,7 +3,7 @@ import './goodButton.scss';
 
 const GoodButton = () => {
   return (
-    <button className="fancy-button" onClick={() => alert('Good Job!')}>
+    <button className="fancy-button" onClick={() => alert('Good job!')}>
       Click me!
     </button>
   );
