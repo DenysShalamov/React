@@ -12,7 +12,15 @@ module.exports = {
     jest: true,
     browser: true,
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx'],
+      },
+    },
+  },
   rules: {
+    'class-methods-use-this': [0, { exceptMethods: ['render'] }],
     'no-alert': 0,
     'no-console': 0,
     'no-constant-condition': 0,
