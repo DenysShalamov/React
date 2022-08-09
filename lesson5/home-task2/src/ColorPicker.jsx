@@ -5,19 +5,20 @@ class ColorPicker extends React.Component {
     super(props);
 
     this.state = {
-      colorName : '',
-    }
+      colorName: '',
+    };
   }
 
   pickerOver(color) {
     this.setState({
       colorName: color,
-    })
+    });
   }
+
   pickerOut() {
     this.setState({
       colorName: '',
-    })
+    });
   }
 
   render() {

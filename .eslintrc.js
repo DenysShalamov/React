@@ -1,5 +1,12 @@
 module.exports = {
   extends: ['airbnb-base', 'plugin:prettier/recommended'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2021,
+    sourceType: 'module',
+  },
   env: {
     es6: true,
     jest: true,
