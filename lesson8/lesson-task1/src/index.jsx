@@ -1,9 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.scss';
-import Life from './Life';
+import Demo from './Demo';
 
 const rootElem = document.querySelector('#root');
 const root = createRoot(rootElem);
 
-root.render(<Life />);
+root.render(<Demo />);

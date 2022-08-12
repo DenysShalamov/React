@@ -13,4 +13,19 @@ body {
   align-items: center;
 }
 
-
+.btn {
+  background-color: #027f02;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  margin: 3px;
+  margin-bottom: 20px;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+}
