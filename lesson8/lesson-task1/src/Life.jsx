@@ -10,7 +10,7 @@ class Life extends React.Component {
     console.log('componentDidMount: API calls, subscriptions');
   }
 
-  souldComponentUpdate() {
+  shouldComponentUpdate() {
     console.log(
       'shouldComponentUpdate(nextProps, nextState): decide to render or not to render',
     );
@@ -23,7 +23,7 @@ class Life extends React.Component {
     );
   }
 
-  componentWilUnmount() {
+  componentWillUnmount() {
     console.log(
       'componentWillUnmount(): cleanup before DOM related to component will be removed',
     );
