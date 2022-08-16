@@ -4,7 +4,7 @@ import UserMenu from './UserMenu';
 
 class App extends React.Component {
   state = {
-    user: null,
+    userData: null,
   };
 
   componentDidMount() {
@@ -12,7 +12,8 @@ class App extends React.Component {
   }
 
   fetchUserData = userId => {
-    fetch(`https://api.github.com/users/${userId}`).then(response =>
+    const userUrl = `https://api.github.com/users/${userId}`;
+    fetch(userUrl).then(response =>
       response.json().then(userData => {
         this.setState({
           userData,
