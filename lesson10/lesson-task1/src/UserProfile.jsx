@@ -1,8 +1,6 @@
 /* eslint-disable camelcase */
 import React from 'react';
 
-const src = 'https://avatars3.githubusercontent.com/u/69631?v=4';
-
 class UserProfile extends React.Component {
   render() {
     const { userData } = this.props;
