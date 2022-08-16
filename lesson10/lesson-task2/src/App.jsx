@@ -3,16 +3,12 @@ import ShoppingCart from './ShoppingCart';
 import Profile from './Profile';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      userData: {
-        firstName: 'Tom',
-        lastName: 'Ford',
-      },
-    };
-  }
+  state = {
+    userData: {
+      firstName: 'Tom',
+      lastName: 'Ford',
+    },
+  };
 
   handleChange = event => {
     const { name, value } = event.target;
