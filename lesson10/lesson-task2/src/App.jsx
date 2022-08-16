@@ -2,17 +2,20 @@ import React from 'react';
 import ShoppingCart from './ShoppingCart';
 import Profile from './Profile';
 
-class Page extends React.Component {
-  state = {
-    userData: {
-      firstName: 'Tom',
-      lastName: 'Ford',
-    },
-  };
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      userData: {
+        firstName: 'Tom',
+        lastName: 'Ford',
+      },
+    };
+  }
 
   handleChange = event => {
     const { name, value } = event.target;
-
     this.setState({
       userData: {
         ...this.state.userData,
@@ -25,14 +28,19 @@ class Page extends React.Component {
     const { userData } = this.state;
     return (
       <div className="page">
-        <h1 className="title">{`Hello, ${userData.firstName} ${userData.lastName}`}</h1>
+        <h1 className="title">
+          {`Hello, ${userData.firstName} ${userData.lastName}`}
+        </h1>
         <main className="content">
-          <ShoppingCart userData={userData} />
-          <Profile userData={userData} handleChange={this.handleChange} />
+          <ShoppingCart userName={this.state.userData.firstName} />
+          <Profile
+            userData={this.state.userData}
+            handleChange={this.handleChange}
+          />
         </main>
       </div>
     );
   }
 }
 
-export default Page;
+export default App;
