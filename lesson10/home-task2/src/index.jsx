@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.scss';
-import App from './App';
+import FilterableProductTable from './FilterableProductTable';
 
 const rootElem = document.querySelector('#root');
 const root = createRoot(rootElem);
@@ -40,4 +40,4 @@ const PRODUCTS = [
   { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' },
 ];
 
-root.render(<App products={PRODUCTS} />);
+root.render(<FilterableProductTable products={PRODUCTS} />);
