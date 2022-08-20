@@ -13,7 +13,7 @@ class Expand extends React.Component {
 
   render() {
     const { title, children } = this.props;
-    const { isOpen } = this.isOpen;
+    const { isOpen } = this.state;
     return (
       <div className="expand border">
         <div className="expand__header">
