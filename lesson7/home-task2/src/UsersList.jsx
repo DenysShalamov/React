@@ -31,14 +31,17 @@ class UsersList extends React.Component {
       this.state.startIndex,
       this.state.endIndex,
     );
+
+    const { users } = this.props;
+    const { currentPage, usersPerPage } = this.state;
     return (
       <div>
         <Pagination
           goPrev={this.goPrevHandler}
           goNext={this.goNextHandler}
-          currentPage={this.state.currentPage}
-          totalItems={this.props.users.length}
-          itemsPerPage={this.state.usersPerPage}
+          currentPage={currentPage}
+          totalItems={users.length}
+          itemsPerPage={usersPerPage}
         />
 
         <ul className="users">
