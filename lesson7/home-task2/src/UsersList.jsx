@@ -21,14 +21,10 @@ class UsersList extends React.Component {
   };
 
   render() {
+    const { users } = this.props;
     const { currentPage, usersPerPage } = this.state;
     const indexTo = currentPage * usersPerPage;
-    const userList = this.props.users.slice(
-      indexTo - usersPerPage,
-      usersPerPage,
-    );
-
-    const { users } = this.props;
+    const userList = users.slice(indexTo - usersPerPage, indexTo);
 
     return (
       <div>

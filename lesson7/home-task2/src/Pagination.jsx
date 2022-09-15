@@ -24,7 +24,7 @@ const Pagination = ({
         <button
           className="btn"
           onClick={() => goNext()}
-          disabled={isNextPageAvailable}
+          disabled={!isNextPageAvailable}
         >
           {isNextPageAvailable ? '→' : ''}
         </button>
